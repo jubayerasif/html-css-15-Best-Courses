@@ -18,19 +18,22 @@ html {
   width: 350px;
   margin: 50px auto;
   box-shadow: 3px 3px 10px var(--card-shadow-color);
+  transition: transform 0.5s ease-out 1s;
+  -webkit-transition: transform 0.5s ease-out 1s;
+  -moz-transition: transform 0.5s ease-out 1s;
+  -ms-transition: transform 0.5s ease-out 1s;
+  -o-transition: transform 0.5s ease-out;
 }
+
 .card-container:hover{
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transition: 1.5s;
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
+  /* transition: 1.5s;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:; */
 }
+
 h1 {
   color: var(--color-grey-600);
   text-align: left;
@@ -105,12 +108,18 @@ h1 {
   border: 2px solid rgb(224, 224, 224);
   font-size: var(--font-size-1);
   font-weight: 600;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -ms-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
 }
 
 .button:hover {
   color: white;
   background-color: var(--color-primary-700);
   border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
   transition: 1.5s;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
