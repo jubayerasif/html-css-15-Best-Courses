@@ -5,6 +5,8 @@ html {
   --color-grey-900: rgb(41, 41, 41);
   --color-primary-300: rgb(85, 190, 243);
   --color-primary-700: rgb(0, 170, 255);
+  --card-bg-color: rgb(255, 255, 255);
+  --card-shadow-color: rgb(201, 200, 200);
   --font-size-1: 18px;
   background-color: var(--color-grey-100);
   font-family: "Krub", sans-serif;
@@ -12,10 +14,10 @@ html {
 }
 
 .card-container {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--card-bg-color);
   width: 350px;
   margin: 50px auto;
-  box-shadow: 3px 3px 10px rgb(201, 200, 200);
+  box-shadow: 3px 3px 10px var(--card-shadow-color);
 }
 
 h1 {
@@ -42,7 +44,13 @@ h1 {
   font-size: 50px;
   font-weight: 600;
 }
-
+.price:hover{
+  color: var(--color-primary-300);
+  background-color: var(--card-bg-color);
+  text-shadow: 2px 2px var(--color-grey-400);
+  transition: .5s;
+  cursor: pointer;
+}
 .price-info {
   color: var(--color-grey-400);
   text-align: center;
@@ -92,4 +100,9 @@ h1 {
   color: white;
   background-color: var(--color-primary-700);
   border: 2px solid rgb(255, 255, 255);
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
 }
