@@ -19,7 +19,18 @@ html {
   margin: 50px auto;
   box-shadow: 3px 3px 10px var(--card-shadow-color);
 }
-
+.card-container:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
 h1 {
   color: var(--color-grey-600);
   text-align: left;
